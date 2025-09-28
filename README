@@ -1,0 +1,70 @@
+consistent-hasher.h
+--------------------
+
+A lightweight, header-only implementation of consistent hashing in
+C99.
+
+
+Author:  Giovanni Santini
+Mail:    giovanni.santini@proton.me
+License: MIT
+
+
+Documentation
+-------------
+
+Consistent hashing is a technique for distributing keys across a
+dynamic set of nodes (e.g., servers or caches). Keys and nodes are
+both hashed onto a circular "ring," and each key is assigned to the
+nearest node clockwise on the ring. When nodes are added or
+removed, only a small fraction of keys need to be remapped, unlike
+in traditional modulo-based hashing.
+
+Benefits:
+  - Minimizes data movement when scaling the number of nodes
+  - Provides fault tolerance in distributed systems
+  - Enables better load distribution when combined with virtual nodes
+
+This library implements function to add and remove nodes, and to
+get the closest node from an item. You can use this inside your
+hashmap logic to move only NUM_ITEMS / NUM_NODES items when
+resizing.
+
+Additional info:
+- https://en.wikipedia.org/wiki/Consistent_hasher
+
+
+Usage
+----
+
+Do this:
+
+  #define CONSISTENT_HASHER_IMPLEMENTATION
+
+before you include the header file in *one* C or C++ file to create the
+implementation.
+
+i.e. it should look like this:
+
+  #include ...
+  #include ...
+  #include ...
+  #define CONSISTENT_HASHER_IMPLEMENTATION
+  #include "consistent-hasher.h"
+
+You can tune the library by #defining certain values. See the
+"Config" comments under the "Configuration" section in the header.
+
+
+Code
+----
+
+The official git repository of micro-tests.h is hosted at:
+
+    https://github.com/San7o/micro-tests.h
+
+This is part of a bigger collection of header-only C99 libraries
+called "micro-headers", contributions are welcome:
+
+    https://github.com/San7o/micro-headers
+
