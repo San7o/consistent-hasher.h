@@ -25,10 +25,9 @@ Benefits:
   - Provides fault tolerance in distributed systems
   - Enables better load distribution when combined with virtual nodes
 
-This library implements function to add and remove nodes, and to
-get the closest node from an item. You can use this inside your
-hashmap logic to move only NUM_ITEMS / NUM_NODES items when
-resizing.
+This library implements functionalities to add and remove nodes, and
+to get the closest node from an item. You can use this inside your
+hashmap logic to move only NUM_ITEMS / NUM_NODES items when resizing.
 
 Additional info:
 - https://en.wikipedia.org/wiki/Consistent_hasher
