@@ -34,7 +34,7 @@
 // resizing.
 //
 // Additional info:
-// - https://en.wikipedia.org/wiki/Consistent_hasher
+// - https://en.wikipedia.org/wiki/Consistent_hashing
 //
 //
 // Usage

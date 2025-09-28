@@ -30,7 +30,7 @@ to get the closest node from an item. You can use this inside your
 hashmap logic to move only NUM_ITEMS / NUM_NODES items when resizing.
 
 Additional info:
-- https://en.wikipedia.org/wiki/Consistent_hasher
+- https://en.wikipedia.org/wiki/Consistent_hashing
 
 
 Usage
