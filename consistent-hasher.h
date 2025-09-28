@@ -62,9 +62,9 @@
 // Code
 // ----
 //
-// The official git repository of micro-tests.h is hosted at:
+// The official git repository of consistent-hasher.h is hosted at:
 //
-//     https://github.com/San7o/micro-tests.h
+//     https://github.com/San7o/consistent-hasher.h
 //
 // This is part of a bigger collection of header-only C99 libraries
 // called "micro-headers", contributions are welcome:
